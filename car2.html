@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>car2</title>
+ <style type="text/css">
+    .pole{
+       height: 490px;
+       width: 20px;
+       background: gray;
+       position: relative;
+       animation-name: polean;
+       animation-duration: 1s;
+       animation-iteration-count: infinite;
+       z-index: 2;
+    }       
+    .cloud1{
+        height: 25px;
+        width: 100px;
+        background: white;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 200px;
+        z-index: 1;
+    }
+    .sky{
+        background:skyblue;
+    }
+    .brown{
+    width: 100%;
+    height: 300px;
+    background: #430101;
+    margin-top: 500px;
+    position: absolute; 
+    }
+   .road{
+   	width: 100%;
+   	height: 300px;
+   	background: black;
+   	margin-top: 490px;
+   	position: absolute;
+   }
+   .body{
+   	width: 500px;
+   	height: 120px;
+   	background: red;
+   	margin-top: 280px;
+   	float: left;
+   	position: relative;
+   	animation-name: body;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+    z-index: 3;
+
+   }
+   .hood{
+   	width: 250px;
+   	height: 120px;
+   	background: red;
+   	position: absolute;
+   	margin-top: 180px;
+   	margin-left: 135px;
+   	animation-name: hood;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+    z-index: 3;
+   }
+   .tyre{
+   	height: 90px;
+   	width: 90px;
+   	position: absolute;
+   	margin-top: 400px;
+   	margin-left: 48px;
+   	background: black;
+   	animation-name: tyres;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+    transform: rotate(deg);
+    z-index: 3;
+   }
+    .tyre2{
+   	height: 90px;
+   	width: 90px;
+   	position: absolute;
+   	margin-top: 400px;
+   	margin-left: 380px;
+   	background: black;
+   	animation-name: tyres;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+    transform: rotate(deg);
+    z-index: 3;
+   }
+   .windo{
+    width: 84px;
+    height: 88px;
+    background: gray;
+    position: absolute;
+    margin-top: 189px;
+    margin-left: 159px;
+    animation-name: windo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: 3;    
+   }
+   .windo2{
+    width: 84px;
+    height: 88px;
+    background: gray;
+    position: absolute;
+    margin-top: 189px;
+    margin-left: 273px;
+    animation-name: windo2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    z-index: 3;     
+   }   
+@keyframes tyres{
+        0%{
+           left: -500px;
+           transform: rotate(1000turn);
+        }  
+        100%{
+        	left: 1600px;
+        }
+    }
+@keyframes body{
+        0%{
+           left: -500px;
+        }  
+        100%{
+        	left: 1600px;
+        }
+    }
+@keyframes hood{
+        0%{
+           left: -500px;
+        }  
+        100%{
+        	left: 1600px;
+        }
+    }
+@keyframes windo{
+        0%{
+           left: -500px;
+        }  
+        100%{
+            left: 1600px;
+        }
+    }
+@keyframes windo2{
+        0%{
+           left: -500px;
+        }  
+        100%{
+            left: 1600px;
+        }
+    }
+@keyframes polean{
+        0%{
+           left: 1600px;
+        }  
+        100%{
+            left: -500px;
+        }
+    }    
+</style> 
+</head>
+<body class="sky">
+ <div class="road"></div>
+ <div class="brown"></div>
+<div class="roadpass"> 
+ <div class="body"></div>
+ <div class="hood"></div>
+ <div class="tyre"></div>
+ <div class="tyre2"></div>
+ <div class="windo"></div>
+ <div class="windo"></div>
+ <div class="windo2"></div>
+ <div class="cloud1"></div>
+ <div class="cloud"></div>
+ <div class="cloud"></div>
+ <div class="cloud"></div>
+ <div class="pole"></div> 
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>boxanimation</title>
+    <style type="text/css">
+        .divdownL{
+          width: 160px;
+          height: 160px;
+          position: absolute;
+          animation-name: boxdownL;
+          animation-duration: 3s;
+          
+          animation-iteration-count: infinite;
+        }
+        .divdownR{
+          width: 160px;
+          height: 160px;
+          position: absolute;
+          animation-name: boxdownR;
+          animation-duration: 3s;
+         
+          animation-iteration-count: infinite;
+        }
+        .divleft{
+          width: 160px;
+          height: 160px;
+          position: absolute;
+          animation-name: boxleft;
+          animation-duration: 3s;
+         
+          animation-iteration-count: infinite;
+          float: left;
+        }
+        .divright{
+          width: 160px;
+          height: 160px;
+          position: absolute;
+          animation-name: boxright;
+          animation-duration: 3s;
+         
+          animation-iteration-count: infinite;
+          float: left;
+        }
+    	@keyframes boxdownL{
+              0%{
+              	left: 550px;
+              	top: 0px;
+              	background-color: salmon;
+
+              }
+            25%{
+            	left: 550px;
+            	top: 400px;
+            	background-color: yellow;
+             }
+             50%{
+             	left: 0px;
+             	top: 400px;
+             	background-color: orange;
+             }
+             75%{
+             	left: 0px;
+             	top: 0px;
+             	background-color: orangered;
+             }
+             100%{
+             	left: 550px;
+             	top: 0px;
+             	background-color: salmon;
+             }
+    	} 
+    	@keyframes boxdownR{
+              0%{
+              	right: 650px;
+              	top: 0px;
+              	background-color: salmon;
+
+              }
+            25%{
+            	right: 650px;
+            	top: 400px;
+            	background-color: yellow;
+             }
+             50%{
+                right: 0px;
+                top: 400px;
+                background-color: orange;
+             }
+             75%{
+             	right: 0px;
+             	top: 0px;
+             	background-color: orangered;
+             }
+             100%{
+             	right: 650px;
+             	top: 0px;
+             	background-color: salmon;
+             }
+    	} 
+    	@keyframes boxleft{
+              0%{
+              	left: 550px;
+              	top: 0px;
+              	background-color: salmon;
+              }
+            25%{
+            	left: 0px;
+            	top: 0px;
+            	background-color: orange;
+             }
+    	}
+    	@keyframes boxright{
+              0%{
+              	right: 650px;
+              	top: 0px;
+              	background-color: salmon;
+              }
+            25%{
+            	right: 0px;
+            	top: 0px;
+            	background-color: orange;
+             }
+    	}
+    </style>
+</head>
+<body style="background-image: gradient: yellow orange;">
+     <div class="divdownL"></div>
+     <div class="divdownR"></div>
+     <div class="divleft"></div>
+     <div class="divright"></div>
+
+
+
+
+</body>
+</html>

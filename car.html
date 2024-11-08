@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>car</title>
+ <style type="text/css">
+ 	.roadpass{
+        animation-name: carpass;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+
+ 	}
+   .road{
+   	width: 100%;
+   	height: 300px;
+   	background: black;
+   	margin-top: 490px;
+   	position: absolute;
+   }
+   .body{
+   	width: 500px;
+   	height: 120px;
+   	background: red;
+   	margin-top: 280px;
+   	float: left;
+   	position: relative;
+   	animation-name: body;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+
+   }
+   .hood{
+   	width: 200px;
+   	height: 120px;
+   	background: red;
+   	position: absolute;
+   	margin-top: 180px;
+   	margin-left: 150px;
+   	animation-name: hood;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+   }
+   .tyre{
+   	height: 90px;
+   	width: 90px;
+   	position: absolute;
+   	margin-top: 400px;
+   	margin-left: 20px;
+   	background: gray;
+   	animation-name: tyres;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+
+   }
+    .tyre2{
+   	height: 90px;
+   	width: 90px;
+   	position: absolute;
+   	margin-top: 400px;
+   	margin-left: 380px;
+   	background: gray;
+   	animation-name: tyres;
+   	animation-iteration-count: infinite;
+   	animation-duration: 3s;
+   	animation-timing-function: linear;
+
+   }
+@keyframes tyres{
+        0%{
+           left: -500px;
+        }  
+        100%{
+        	left: 1600px;
+        }
+    }
+@keyframes body{
+        0%{
+           left: -500px;
+        }  
+        100%{
+        	left: 1600px;
+        }
+    }
+@keyframes hood{
+        0%{
+           left: -500px;
+        }  
+        100%{
+        	left: 1600px;
+        }
+    }        
+</style> 
+</head>
+<body>
+ <div class="road"></div>
+<div class="roadpass"> 
+ <div class="body"></div>
+ <div class="hood"></div>
+ <div class="tyre"></div>
+ <div class="tyre2"></div>
+</div>
+</body>
+</html>
